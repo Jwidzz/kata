@@ -1,0 +1,246 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+        font-family: 'TT Lakes Bold';
+        src: url('../fonts/TTLakes-Bold.eot');
+        src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+body {
+    min-width: 320px;
+    background-color: #F8F8F8;
+}
+
+a {
+text-decoration: none;
+}
+
+/*           header          */
+
+.logo {
+    height: 50.81px;
+    width: 96.55px;
+}
+
+.divider {
+    width: 2px;
+    height: 32px;
+}
+
+.nav__block {
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D9FFF5;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__block-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__block-right {
+    display: flex;
+    gap: 20px;
+}
+
+.divider-1, .call, .chat, .profile {
+    display: none;
+}
+
+/*           main            */
+
+.main {
+    background-color: #F8F8F8;
+    padding-top: 20px;
+}
+
+.mian__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__block-right {
+    display: none;
+}
+
+.main__block-right-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: #1B1C21;
+    line-height: 24px;
+}
+
+.main__block-left {
+    font-family: 'TT Lakes Bold';
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;  
+    font-style: normal;
+    line-height: 40px;
+}
+
+.main__block-title{
+    white-space: nowrap;
+}
+
+.highlight {
+    margin-right: 20px;
+    width: 4px;
+    height: 40px;
+}
+
+/*         scroll list       */
+
+.main__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.main__list::-webkit-scrollbar {
+    width: 0;
+  }
+
+.main__list-button {
+    font-family: 'TT Lakes Medium';
+    color: #7E7E82;
+    background-color: #F8F8F8;
+    border: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    width: 246px;
+    height: 40px;
+    line-height: 24px;
+}
+
+.main__list-button:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+/*        text and pic       */
+
+.section__container-1, .section__container-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section__container-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.more_pic {
+    margin-right: 5px;
+    width: 7.41px;
+    height: 10.29px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section__text-1 {
+    font-family: 'TT Lakes Regular';
+    height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.section__text-2 {
+    font-family: 'TT Lakes Regular';
+    height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    display: none;
+}
+.section__button {
+    background-color: #F8F8F8;
+    border: none;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.section__img {
+    min-width: 100%;
+    height: auto;
+    
+}
+
+/*            media          */
+
+@media (min-width:769px){
+    .divider-2, .call, .chat, .profile {
+        display: block;
+    }
+
+    .divider-1 {
+        display: none;
+    }
+
+    .section {
+        display: flex;
+    }
+    
+    .section__img {
+        border-radius: 6px;
+        width: auto;
+        height: auto;
+        min-width: 50%;
+        margin-right: 20px ;
+    }
+}
+
+@media (min-width: 1120px) {
+    .nav__block {
+        display: none;
+    }
+
+    .main__block-right {
+        display: flex;
+    }
+
+    .section__text-2 {
+        display: block;
+    }
+}
